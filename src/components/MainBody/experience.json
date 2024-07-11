@@ -1,0 +1,50 @@
+{
+  "experience": [
+    {
+      "id": "ex1",
+      "title": "Telstra",
+      "description": "Complex Customer Solution Specialist",
+      "startDate": "Dec, 2023",
+      "endDate": ""
+    },
+    {
+      "id": "ex2",
+      "title": "Elevance Health(Formerly Anthem)",
+      "description": "Senior Software Engineer",
+      "startDate": "April, 2020",
+      "endDate": "Sep, 2023"
+    },
+    {
+      "id": "ex3",
+      "title": "Deloitte",
+      "description": "Software Developer",
+      "startDate": "Aug, 2016",
+      "endDate": "Mar, 2020"
+    }
+  ],
+  "education": [
+    {
+      "id": "ed1",
+      "title": "UCLA Extension",
+      "description": "Mathematical Solutions for Businesses",
+      "startDate": "Mar, 2021",
+      "endDate": "Jun, 2021"
+    },
+    {
+      "id": "ed2",
+      "title": "Cochin University of Science & Technology",
+      "description": "Bachelor of Technology, Computer Science & Engineering",
+      "startDate": "Aug, 2012",
+      "endDate": "Apr, 2016"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "c1",
+      "title": "AWS Certified Cloud Practitioner",
+      "img": "aws-certified-cloud-practitioner",
+      "url": "https://www.credly.com/badges/7eb04572-b561-47fd-a6e4-8d948e3b47a2/public_url",
+      "issuedDate": "Jul, 2024"
+    }
+  ]
+}
