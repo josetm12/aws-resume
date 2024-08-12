@@ -25,7 +25,6 @@ function Footer() {
         setCount(result.visits);
         setLoading(false);
       } catch (error) {
-        console.log('Fetch error', error);
         setCount('NA');
         setLoading(false);
       }
@@ -35,15 +34,13 @@ function Footer() {
   }, []);
 
   return (
-    <div className="w-full text-center p-1 mt-10">
+    <footer className="w-full text-center p-1 mt-10">
       <div className="text-sm flex justify-center items-center">
         Visitor count:{' '}
         {loading ? <LoaderPinwheel className="h-4 animate-spin" /> : count}
       </div>
-      <p className="text-gray-700 text-sm">
-        &copy; {currentYear} JTM. All rights reserved.
-      </p>
-    </div>
+      <p className="text-xs">&copy; {currentYear} JTM. All rights reserved</p>
+    </footer>
   );
 }
 

@@ -20,7 +20,7 @@ const DetailsGrid: React.FC<ItemListProps> = ({ items }) => {
       {items.map((item) => (
         <li
           key={item.id}
-          className="w-full flex flex-row justify-between text-sm font-light"
+          className="w-full flex flex-row justify-between text-sm font-normal"
         >
           <div className="item-details">
             <h3 className="text-lg font-medium leading-none">{item.title}</h3>
