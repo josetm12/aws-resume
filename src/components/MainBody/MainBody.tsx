@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-
 //@ts-expect-error ts not detecting the path
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 //@ts-expect-error ts not detecting the path
@@ -9,10 +7,10 @@ import { Button } from '@/components/ui/button';
 import AWS_CCP_Logo from '/aws-certified-cloud-practitioner.png';
 import { Linkedin } from 'lucide-react';
 import DetailsGrid from './DetailsGrid';
-import * as data from './experience.json';
 import GithubIcon from './GithubIcon';
+import * as data from './experience.json';
 
-function MainBodyContent() {
+export default function MainBody() {
   return (
     <div className="main-body flex flex-col items-center gap-10 ps-5 pe-5 max-w-screen-md ms-auto me-auto ">
       <div className="quick-glance flex flex-col items-center space-y-4">
@@ -93,16 +91,4 @@ function MainBodyContent() {
       </div>
     </div>
   );
-}
-
-export default function MainBody() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    console.log('Finished load');
-    setTimeout(() => {
-      setLoading(false);
-    }, 300);
-  }, []);
-
-  return <MainBodyContent />;
 }
