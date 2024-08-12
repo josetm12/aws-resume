@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { LoaderPinwheel } from 'lucide-react';
 
+//@ts-expect-error ts not detecting the path
+import { Button } from '@/components/ui/button';
+
 const requestOptions = {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
@@ -35,15 +38,25 @@ function Footer() {
   }, []);
 
   return (
-    <div className="w-full text-center p-1 mt-10">
+    <footer className="w-full text-center p-1 mt-10">
       <div className="text-sm flex justify-center items-center">
         Visitor count:{' '}
         {loading ? <LoaderPinwheel className="h-4 animate-spin" /> : count}
       </div>
-      <p className="text-gray-700 text-sm">
-        &copy; {currentYear} JTM. All rights reserved.
+      <p className="text-xs">
+        &copy; {currentYear} JTM. All rights reserved | Icons created by Freepik
+        -
+        <Button variant="link" className="ml-1 p-0 max-h-fit">
+          <a
+            href="https://www.flaticon.com/free-animated-icons/coding"
+            target="_"
+            title="coding animated icons"
+          >
+            Flaticon
+          </a>
+        </Button>
       </p>
-    </div>
+    </footer>
   );
 }
 

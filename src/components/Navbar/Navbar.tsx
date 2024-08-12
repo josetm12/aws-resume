@@ -3,9 +3,9 @@ import { ModeToggle } from '@/components/mode-toggle';
 
 function Navbar() {
   return (
-    <div className="p-1 w-full flex flex-row justify-end">
+    <nav className="p-1 w-full flex flex-row justify-end">
       <ModeToggle />
-    </div>
+    </nav>
   );
 }
 
