@@ -5,6 +5,7 @@ import { Separator } from '@/components/ui/separator';
 //@ts-expect-error ts not detecting the path
 import { Button } from '@/components/ui/button';
 import AWS_CCP_Logo from '/aws-certified-cloud-practitioner.png';
+import MyPIC from '/mypic.png';
 import { Linkedin } from 'lucide-react';
 import DetailsGrid from './DetailsGrid';
 import GithubIcon from './GithubIcon';
@@ -15,7 +16,7 @@ export default function MainBody() {
     <div className="main-body flex flex-col items-center gap-10 ps-5 pe-5 max-w-screen-md ms-auto me-auto ">
       <div className="quick-glance flex flex-col items-center space-y-4">
         <Avatar className="h-32 w-32">
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage src={MyPIC} />
           <AvatarFallback>JTM</AvatarFallback>
         </Avatar>
         <div className="name flex flex-row align-center gap-3">
